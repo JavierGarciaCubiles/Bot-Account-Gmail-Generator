@@ -53,7 +53,6 @@ your_last_name = random.choice(french_last_names)
 # Generate a random number
 random_number = random.randint(1000, 9999)
 
-# Retirer les accents des prénoms et nom de famille
 your_first_name_normalized = unidecode(your_first_name).lower()
 your_last_name_normalized = unidecode(your_last_name).lower()
 
@@ -163,9 +162,6 @@ def fill_form(driver):
 try:
     fill_form(driver)
 finally:
-    ### --- 5. AÑADIMOS driver.quit() AQUÍ --- ###
-    # El navegador se cerrará al final de todo el proceso,
-    # después de ambos registros, incluso si hay un error.
-    print("\n[INFO] Proceso de automatización finalizado. Cerrando el navegador.")
-    time.sleep(10) # Espera 10 segundos para ver el resultado final
+    # Wait for user input before closing the browser
+    input("Presiona Enter para cerrar el navegador...")
     driver.quit()
