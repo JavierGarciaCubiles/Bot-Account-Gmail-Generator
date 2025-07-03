@@ -1,4 +1,4 @@
-# Gmail Account Creation Automation Script - Version 1.1.0
+# Gmail Account Creation Automation Script - Version 2.0
 # Original script by Abdelhakim Khaouiti (khaouitiabdelhakim on GitHub)
 # -- MODIFIED SCRIPT by Javier Garcia Cubiles --
 
